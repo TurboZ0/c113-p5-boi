@@ -1,11 +1,16 @@
+function preload() {}
 
 function setup() {
-    createCanvas(900, 900);
-    video=createCapture(VIDEO)
-    }
+    canvas= createCanvas(1000,1000);
+    canvas.position(700,300);
+
+    video= createCapture(VIDEO); 
+    video.hide();
+}
+
+function draw() {
+    image(video, 82, 100, 550 ,325);
     
-    function draw() {
-      image(video, 120, 100, 450,320);
     rect(100,100, 500, 15);
       rect(100,420, 500, 15);
       rect(620, 100, 15, 330);
@@ -18,6 +23,4 @@ function setup() {
     circle(626, 428, 50, 50);
       fill("blue");
      stroke("blue");
-    
-     
-    }
+}
